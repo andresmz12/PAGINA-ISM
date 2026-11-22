@@ -4,7 +4,7 @@ const ROOT = __dirname, PORT = process.env.PORT || 3000;
 const TYPES = { '.html':'text/html; charset=utf-8', '.js':'application/javascript; charset=utf-8', '.css':'text/css; charset=utf-8',
   '.webp':'image/webp', '.jpeg':'image/jpeg', '.jpg':'image/jpeg', '.png':'image/png', '.svg':'image/svg+xml',
   '.xml':'application/xml', '.txt':'text/plain; charset=utf-8', '.ico':'image/x-icon' };
-const PUBLIC = new Set(['index.html','app.js','logo.jpeg','og-image.jpg','robots.txt','sitemap.xml']);
+const PUBLIC = new Set(['index.html','app.js','logo.jpeg','og-image.jpg','privacidad.html','robots.txt','sitemap.xml']);
 const cache = new Map();
 
 function load(rel) {
