@@ -1,3 +1,4 @@
 # ISM Consulting Services – sitio web
 
-Copia idéntica de los archivos de ismconsultores.com: `index.html`, `logo.jpeg`, `image-slot.js`, `robots.txt`, `sitemap.xml`.
+Mismo diseño que ismconsultores.com, con dos mejoras: código precompilado (`app.js`, sin React/Babel desde CDN) y formulario que abre WhatsApp con el mensaje listo.
+Archivos: `index.html`, `app.js`, `logo.jpeg`, `robots.txt`, `sitemap.xml`.
