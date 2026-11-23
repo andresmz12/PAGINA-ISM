@@ -77,12 +77,12 @@ const C = {
       sub:'Dos plataformas desarrolladas por ISM y en uso hoy por negocios en Estados Unidos.',
       items:[
         {
-          tag:'Tiendas multiservicio', name:'Reports System', url:'reportssystem.com',
+          tag:'Tiendas multiservicio', name:'Reports System', url:'reportssystems.com',
           sub:'Su tienda cierra el día en minutos, no en horas.',
           desc:'Envíos, cheques, depósitos, cancelaciones y arqueo de caja en una sola plataforma. El Over/Short se calcula solo, la evidencia queda adjunta y cada movimiento tiene auditoría.',
           features:['Envíos, cheques, depósitos y arqueo de caja','Over/Short calculado automáticamente en cada cierre','Cancelaciones con evidencia fotográfica obligatoria','Centro de comisiones por servicio y período','Alertas de vencimiento de licencias y permisos','Multi-tienda, roles y auditoría con usuario, fecha e IP'],
           price:'Desde <strong>$50/mes por tienda</strong> · 100% web, sin instalar',
-          cta:'Entrar al sitio', href:'https://www.reportssystem.com'
+          cta:'Entrar al sitio', href:'https://www.reportssystems.com'
         },
         {
           tag:'Todo tipo de negocio', name:'My Profit & Loss', url:'myprofitandloss.com',
@@ -254,12 +254,12 @@ const C = {
       sub:'Two platforms developed by ISM and in use today by businesses across the United States.',
       items:[
         {
-          tag:'Multi-service stores', name:'Reports System', url:'reportssystem.com',
+          tag:'Multi-service stores', name:'Reports System', url:'reportssystems.com',
           sub:'Your store closes the day in minutes, not hours.',
           desc:'Money transfers, checks, deposits, cancellations, and cash count in a single platform. Over/Short is calculated automatically, evidence stays attached, and every entry is audited.',
           features:['Money transfers, checks, deposits, and cash count','Over/Short calculated automatically at every close','Cancellations with mandatory photo evidence','Commission center by service and period','Alerts before licenses and permits expire','Multi-store, roles, and audit log with user, date, and IP'],
           price:'From <strong>$50/mo per store</strong> · 100% web, nothing to install',
-          cta:'Visit the site', href:'https://www.reportssystem.com'
+          cta:'Visit the site', href:'https://www.reportssystems.com'
         },
         {
           tag:'Every type of business', name:'My Profit & Loss', url:'myprofitandloss.com',
