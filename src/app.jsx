@@ -35,6 +35,7 @@ const C = {
       eyebrow:'Servicios',
       title:'Todo lo que su empresa necesita.',
       sub:'Soluciones contables para la comunidad hispanohablante en Estados Unidos.',
+      more:'Ver servicio',
       links:{0:'/servicios/preparacion-de-impuestos',1:'/servicios/contabilidad',3:'/servicios/formacion-de-llc'},
       ctaCell:'¿No encuentra lo que necesita? Cuéntenos su caso y le decimos si podemos ayudarle.',
       ctaCellLink:'Escribir por WhatsApp',
@@ -211,6 +212,7 @@ const C = {
       eyebrow:'Services',
       title:'Everything your business needs.',
       sub:'Accounting solutions for the Hispanic community in the United States.',
+      more:'View service',
       links:{0:'/services/tax-preparation',1:'/services/accounting',3:'/services/llc-formation'},
       ctaCell:'Do not see what you need? Tell us your case and we will let you know if we can help.',
       ctaCellLink:'Message us on WhatsApp',
@@ -398,7 +400,7 @@ function Navbar({ lang, setLang, c }) {
         <img width="44" height="44" decoding="async" src={window.__resources && window.__resources.logo || "logo.jpeg"} alt="ISM Consulting Services" />
       </a>
       <div className="nav-links">
-        {[['#servicios',c.servicios],['#nosotros',c.nosotros],['#plataformas',c.plataformas],['#apps',c.apps],['#contacto',c.contacto]].map(([h,l]) => (
+        {[['#servicios',c.servicios],['#nosotros',c.nosotros],['#plataformas',c.plataformas],['#apps',c.apps],[lang==='es'?'/blog/':'/blog/en/','Blog'],['#contacto',c.contacto]].map(([h,l]) => (
           <a key={h} href={h}>{l}</a>
         ))}
       </div>
@@ -422,7 +424,7 @@ function Hero({ c }) {
       <div className="hero-left">
         <div className="eyebrow">{c.eyebrow}</div>
         <h1 className="hero-title">
-          {c.title1} <em>{c.title2}</em><br />{c.title3} <em>{c.title4}</em>
+          {c.title1}<br /><em>{c.title2}</em><br />{c.title3} <em>{c.title4}</em>
         </h1>
         <p className="hero-sub">{c.sub}</p>
         <div className="hero-ctas">
@@ -482,6 +484,7 @@ function Services({ c }) {
             <div className="service-icon-wrap"><span className="service-icon">{s.n}</span></div>
             <h3>{s.name}</h3>
             <p>{s.desc}</p>
+            {c.links[i] && <span style={{display:'block',marginTop:'14px',fontSize:'13px',fontWeight:600,color:'var(--navy)'}}>{c.more} →</span>}
             {s.badge && <span className="service-badge-pill">{s.badge}</span>}
             <span className="service-arrow">↗</span>
           </a>
