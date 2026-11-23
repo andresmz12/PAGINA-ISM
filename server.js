@@ -57,6 +57,7 @@ http.createServer((req, res) => {
   const clean = rel.replace(/\/$/, '');
   if (/^blog(\/en)?$/.test(clean)) rel = clean + '/index.html';                 // /blog/ y /blog/en/
   else if (/^blog\/(en\/)?[\w-]+$/.test(clean)) rel = clean + '.html';          // /blog/slug
+  else if (/^(servicios|services)\/[\w-]+$/.test(clean)) rel = clean + '.html';      // páginas de servicio
   else if (rel === 'blog/blog.css') { /* estilos del blog */ }
   else if (!(PUBLIC.has(rel) || /^img\/[\w.-]+\.webp$/.test(rel))) rel = 'index.html';
   const f = load(rel);

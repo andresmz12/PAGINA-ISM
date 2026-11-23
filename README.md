@@ -5,6 +5,7 @@ Mismo diseño que ismconsultores.com, optimizado y desplegado en Railway (`npm s
 ## Estructura
 - `src/` código fuente: `app.jsx` (página principal), `template.html`, `articles.mjs` + `articles.new.mjs` (artículos del blog, ES/EN)
 - `scripts/build.mjs` genera `app.js`, `index.html` (pre-renderizado), `blog/*.html` y `sitemap.xml`
+- `src/services.mjs` páginas de servicio (LLC, Taxes, Contabilidad) → `/servicios/...` y `/services/...`
 - `blog/` artículos y índice (`/blog/` en español, `/blog/en/` en inglés), generados
 - `server.js` servidor sin dependencias: compresión, caché, `POST /api/contact`
 

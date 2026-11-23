@@ -264,5 +264,53 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://ismconsultores.com/blog/en/itin-get-or-renew"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://ismconsultores.com/blog/itin-obtener-renovar"/>
   </url>
+  <url>
+    <loc>https://ismconsultores.com/servicios/preparacion-de-impuestos</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ismconsultores.com/servicios/preparacion-de-impuestos"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ismconsultores.com/services/tax-preparation"/>
+  </url>
+  <url>
+    <loc>https://ismconsultores.com/servicios/formacion-de-llc</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ismconsultores.com/servicios/formacion-de-llc"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ismconsultores.com/services/llc-formation"/>
+  </url>
+  <url>
+    <loc>https://ismconsultores.com/servicios/contabilidad</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ismconsultores.com/servicios/contabilidad"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ismconsultores.com/services/accounting"/>
+  </url>
+  <url>
+    <loc>https://ismconsultores.com/services/tax-preparation</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ismconsultores.com/services/tax-preparation"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ismconsultores.com/servicios/preparacion-de-impuestos"/>
+  </url>
+  <url>
+    <loc>https://ismconsultores.com/services/llc-formation</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ismconsultores.com/services/llc-formation"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ismconsultores.com/servicios/formacion-de-llc"/>
+  </url>
+  <url>
+    <loc>https://ismconsultores.com/services/accounting</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ismconsultores.com/services/accounting"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ismconsultores.com/servicios/contabilidad"/>
+  </url>
   <!-- blog:end -->
 </urlset>

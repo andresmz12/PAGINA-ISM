@@ -17,7 +17,7 @@ const OLD = {
         { type:'h3', text:'Documentos necesarios para aplicar' },
         { type:'p', text:'Para aplicar al ITIN necesita completar el Formulario W-7 del IRS junto con documentación que pruebe su identidad y estatus migratorio. Los documentos aceptados incluyen pasaporte vigente, visa de los EE. UU., acta de nacimiento con foto oficial, licencia de conducir extranjera, entre otros.' },
         { type:'h3', text:'Proceso de tramitación' },
-        { type:'p', text:'El proceso puede demorar entre 7 y 11 semanas si aplica directamente al IRS por correo. Sin embargo, si trabaja con un Agente Aceptante Certificado (CAA) como ISM Consulting Services, el proceso es más ágil y seguro — no necesita enviar sus documentos originales al IRS.' },
+        { type:'p', text:'El proceso puede demorar entre 7 y 11 semanas si aplica directamente al IRS por correo. Una solicitud completa y bien preparada, con todos los documentos correctos, reduce el riesgo de rechazos y demoras. En ISM Consulting le ayudamos a preparar su solicitud y a revisar que no falte nada antes de enviarla.' },
         { type:'h3', text:'¿Cuándo debo renovar mi ITIN?' },
         { type:'p', text:'Su ITIN expira si no lo ha usado en su declaración de impuestos por 3 años consecutivos. También expiran en bloque los ITINs con ciertos dígitos centrales. En ISM Consulting le avisamos con anticipación si su ITIN está próximo a expirar y gestionamos la renovación por usted.' },
       ]
@@ -74,7 +74,7 @@ const OLD = {
         { type:'h3', text:'Required documents' },
         { type:'p', text:'To apply for an ITIN, you need to complete IRS Form W-7 along with documentation proving your identity and foreign status. Accepted documents include a valid passport, U.S. visa, birth certificate with official photo ID, foreign driver\'s license, among others.' },
         { type:'h3', text:'Application process' },
-        { type:'p', text:'The process can take 7 to 11 weeks if you apply directly to the IRS by mail. However, working with a Certified Acceptance Agent (CAA) like ISM Consulting Services makes the process faster and safer — you don\'t need to mail your original documents to the IRS.' },
+        { type:'p', text:'The process can take 7 to 11 weeks if you apply directly to the IRS by mail. A complete, well-prepared application with all the right documents reduces the risk of rejections and delays. At ISM Consulting we help you prepare your application and check that nothing is missing before it is sent.' },
       ]
     },
     {
@@ -113,13 +113,13 @@ const OLD = {
 };
 const META = {
   es: { 1: { slug:'itin-obtener-renovar', catKey:'ITIN', ts:'2025-01-15',
-            takeaways:['El ITIN es un número de identificación fiscal del IRS para quienes no califican para un SSN.','Se solicita con el Formulario W-7 y documentos que prueben su identidad.','Vence si no se usa en una declaración por 3 años consecutivos.','Un agente aceptante certificado puede revisar sus documentos originales y evitar envíos por correo.'] },
+            takeaways:['El ITIN es un número de identificación fiscal del IRS para quienes no califican para un SSN.','Se solicita con el Formulario W-7 y documentos que prueben su identidad.','Vence si no se usa en una declaración por 3 años consecutivos.','Una solicitud completa y bien preparada reduce el riesgo de rechazos y demoras.'] },
         2: { slug:'formar-llc', catKey:'Empresas y LLC', ts:'2025-02-15',
             takeaways:['La LLC separa su patrimonio personal del del negocio.','El mejor estado depende de dónde opere su negocio.','Después de formarla necesita un EIN y una cuenta bancaria del negocio.','Es una estructura flexible para pequeños y medianos negocios.'] },
         3: { slug:'fincen-boi', catKey:'Cumplimiento', ts:'2026-08-11',
             takeaways:['Las empresas y personas de EE. UU. ya no están obligadas a reportar beneficiarios reales (BOI).','Solo ciertas empresas extranjeras registradas en EE. UU. deben seguir reportando.','Si ya presentó un reporte, no necesita hacer nada más.'] } },
   en: { 1: { slug:'itin-get-or-renew', catKey:'ITIN', ts:'2025-01-15',
-            takeaways:['The ITIN is an IRS tax ID number for people who do not qualify for an SSN.','It is requested with Form W-7 and documents proving your identity.','It expires if not used on a return for 3 consecutive years.','A certified acceptance agent can verify your original documents so you do not have to mail them.'] },
+            takeaways:['The ITIN is an IRS tax ID number for people who do not qualify for an SSN.','It is requested with Form W-7 and documents proving your identity.','It expires if not used on a return for 3 consecutive years.','A complete, well-prepared application reduces the risk of rejections and delays.'] },
         2: { slug:'form-an-llc', catKey:'Business & LLC', ts:'2025-02-15',
             takeaways:['An LLC separates your personal assets from the business’s.','The best state depends on where your business operates.','After forming it you need an EIN and a business bank account.','It is a flexible structure for small and medium businesses.'] },
         3: { slug:'fincen-boi', catKey:'Compliance', ts:'2026-08-11',

@@ -35,6 +35,7 @@ const C = {
       eyebrow:'Servicios',
       title:'Todo lo que su empresa necesita.',
       sub:'Soluciones contables para la comunidad hispanohablante en Estados Unidos.',
+      links:{0:'/servicios/preparacion-de-impuestos',1:'/servicios/contabilidad',3:'/servicios/formacion-de-llc'},
       ctaCell:'¿No encuentra lo que necesita? Cuéntenos su caso y le decimos si podemos ayudarle.',
       ctaCellLink:'Escribir por WhatsApp',
       items:[
@@ -183,6 +184,7 @@ const C = {
       navLinks:['Inicio','Servicios','Nosotros','Plataformas','Apps','Contacto'],
       navAnchors:['#hero','#servicios','#nosotros','#plataformas','#apps','#contacto'],
       servLinks:['Preparación de Taxes','Formación de LLC','Contabilidad','Número ITIN','Reports System'],
+      servHrefs:['/servicios/preparacion-de-impuestos','/servicios/formacion-de-llc','/servicios/contabilidad','#servicios','#plataformas'],
       docLinks:[
         { l:'Atención en español' },
         { l:'Atención en inglés' }
@@ -209,6 +211,7 @@ const C = {
       eyebrow:'Services',
       title:'Everything your business needs.',
       sub:'Accounting solutions for the Hispanic community in the United States.',
+      links:{0:'/services/tax-preparation',1:'/services/accounting',3:'/services/llc-formation'},
       ctaCell:'Do not see what you need? Tell us your case and we will let you know if we can help.',
       ctaCellLink:'Message us on WhatsApp',
       items:[
@@ -357,6 +360,7 @@ const C = {
       navLinks:['Home','Services','About','Platforms','Apps','Contact'],
       navAnchors:['#hero','#servicios','#nosotros','#plataformas','#apps','#contacto'],
       servLinks:['Tax Preparation','LLC Formation','Accounting','ITIN Number','Reports System'],
+      servHrefs:['/services/tax-preparation','/services/llc-formation','/services/accounting','#servicios','#plataformas'],
       docLinks:[
         { l:'Service in Spanish' },
         { l:'Service in English' }
@@ -474,13 +478,13 @@ function Services({ c }) {
       </div>
       <div className="services-grid">
         {c.items.map((s,i)=>(
-          <div key={s.name} className="service-card reveal" style={{transitionDelay:`${i*0.06}s`}}>
+          <a key={s.name} href={c.links[i] || undefined} className="service-card reveal" style={{transitionDelay:`${i*0.06}s`, textDecoration:'none', color:'inherit', cursor: c.links[i] ? 'pointer' : 'default'}}>
             <div className="service-icon-wrap"><span className="service-icon">{s.n}</span></div>
             <h3>{s.name}</h3>
             <p>{s.desc}</p>
             {s.badge && <span className="service-badge-pill">{s.badge}</span>}
             <span className="service-arrow">↗</span>
-          </div>
+          </a>
         ))}
         <a href="https://wa.me/13124989026" target="_blank" rel="noopener" className="service-card service-card-cta reveal">
           <span>{c.ctaCell}</span>
@@ -846,7 +850,7 @@ function Footer({ c }) {
         </div>
         <div className="footer-col">
           <h3>{c.serv}</h3>
-          {c.servLinks.map(l=><a key={l} href="#servicios">{l}</a>)}
+          {c.servLinks.map((l,i)=><a key={l} href={c.servHrefs[i]}>{l}</a>)}
         </div>
         <div className="footer-col">
           <h3>{c.docs}</h3>
