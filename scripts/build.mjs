@@ -172,11 +172,11 @@ for (const lang of ['es', 'en']) {
 
 // 4b) Páginas de servicio
 const SUI = {
-  es: { eyebrow: 'Servicio', includes: 'Qué incluye', how: 'Cómo trabajamos', needs: 'Qué necesita para empezar', needsNote: 'Según su caso podemos pedirle otros documentos. Si le falta algo, le indicamos qué hacer.',
+  es: { eyebrow: 'Servicio', includes: 'Qué hacemos', how: 'Cómo trabajamos', needs: 'Qué necesita para empezar', needsNote: 'Según su caso podemos pedirle otros documentos. Si le falta algo, le indicamos qué hacer.',
     faq: 'Preguntas frecuentes', related: 'Guías relacionadas', others: 'Otros servicios', call: 'Llamar ahora', free: 'Consulta gratuita', reply: 'Respuesta en menos de 24 horas', online: '100% en línea · En español',
     ctaT: '¿Listo para empezar?', ctaP: 'Cuéntenos su situación. La primera consulta es gratuita y sin compromiso.', more: 'Ver servicio',
     steps: [['Contáctenos', 'Escríbanos por WhatsApp o complete el formulario. Cuéntenos su situación, sin compromiso.'], ['Evaluación gratuita', 'Revisamos su caso y le explicamos sus opciones con claridad y sin tecnicismos.'], ['Manos a la obra', 'Preparamos y gestionamos todo su trámite ante el IRS o el estado correspondiente.'], ['Listo y en orden', 'Recibe su trámite completo y el respaldo continuo de nuestro equipo.']] },
-  en: { eyebrow: 'Service', includes: 'What is included', how: 'How we work', needs: 'What you need to get started', needsNote: 'Depending on your case we may ask for other documents. If something is missing, we tell you what to do.',
+  en: { eyebrow: 'Service', includes: 'What we do', how: 'How we work', needs: 'What you need to get started', needsNote: 'Depending on your case we may ask for other documents. If something is missing, we tell you what to do.',
     faq: 'Frequently asked questions', related: 'Related guides', others: 'Other services', call: 'Call now', free: 'Free consultation', reply: 'Reply within 24 hours', online: '100% online · In Spanish',
     ctaT: 'Ready to get started?', ctaP: 'Tell us your situation. The first consultation is free and with no commitment.', more: 'View service',
     steps: [['Contact us', 'Message us on WhatsApp or fill out the form. Tell us your situation, no commitment.'], ['Free evaluation', 'We review your case and explain your options clearly, without jargon.'], ['We get to work', 'We prepare and handle your entire filing with the IRS or the relevant state.'], ['Done and in order', 'You receive your completed filing and ongoing support from our team.']] }
@@ -187,26 +187,19 @@ for (const lang of ['es', 'en']) {
   for (const sv of list) {
     const partner = altList.find(x => x.key === sv.key);
     const url = SITE + sbase(lang) + sv.slug, altUrl = SITE + sbase(lang === 'es' ? 'en' : 'es') + partner.slug;
-    const rel = sv.related.map(k => ARTICLES[lang].find(a => a.key === k)).filter(Boolean);
-    const others = list.filter(x => x !== sv);
-    const body = `<main id="main"><div class="wrap">
+    const body = `<main id="main"><div class="wrap svc">
   <div class="crumbs"><a href="/">${u.home}</a><span>/</span><a href="/#servicios">${u.services}</a><span>/</span>${esc(sv.name)}</div>
-  <section class="svc-hero"><div><span class="cat">${t.eyebrow}</span><h1>${esc(sv.title)}</h1><p class="lead">${esc(sv.lead)}</p>
-    <div class="cta-row"><a class="btn" href="${WA}" target="_blank" rel="noopener">${t.free}</a><a class="btn out" href="tel:+13124989026">${t.call}</a></div></div>
-    <div class="svc-card"><strong>${t.free}</strong><p>${t.reply}</p><p>${t.online}</p><p class="small">Chicago, IL</p></div></section>
-  <section class="svc-sec"><h2>${t.includes}</h2><div class="inc">${sv.includes.map(([a, b], i) => `<div class="inc-i"><span class="n">0${i + 1}</span><h3>${esc(a)}</h3><p>${esc(b)}</p></div>`).join('')}</div></section>
-  <section class="svc-sec two"><div><h2>${esc(sv.whoTitle)}</h2><ul class="tick">${sv.who.map(x => `<li>${esc(x)}</li>`).join('')}</ul></div>
-    <div><h2>${t.needs}</h2><ul class="tick">${sv.needs.map(x => `<li>${esc(x)}</li>`).join('')}</ul><p class="small-note">${t.needsNote}</p></div></section>
-  <section class="svc-sec"><h2>${t.how}</h2><ol class="steps">${t.steps.map(([a, b]) => `<li><h3>${a}</h3><p>${b}</p></li>`).join('')}</ol></section>
-  <section class="svc-sec faq"><h2>${t.faq}</h2>${sv.faq.map(([q, a], i) => `<details${i === 0 ? ' open' : ''}><summary>${esc(q)}</summary><p>${esc(a)}</p></details>`).join('')}</section>
-  <section class="svc-cta"><h2>${t.ctaT}</h2><p>${t.ctaP}</p><div class="cta-row"><a class="btn" href="${WA}" target="_blank" rel="noopener">${t.free}</a><a class="btn ghost" href="tel:+13124989026">${t.call}</a></div></section>
-  ${rel.length ? `<section class="related"><h2>${t.related}</h2><div class="grid">${rel.map(r => cardHtml(r, lang)).join('')}</div></section>` : ''}
-  <section class="svc-sec others"><h2>${t.others}</h2><div class="oth">${others.map(o => `<a href="${sbase(lang)}${o.slug}"><strong>${esc(o.name)}</strong><span>${t.more} →</span></a>`).join('')}</div></section>
+  <header class="svc-head"><h1>${esc(sv.title)}</h1><p class="lead">${esc(sv.lead)}</p>
+    <div class="cta-row"><a class="btn" href="${WA}" target="_blank" rel="noopener">${t.free}</a><a class="btn out" href="tel:+13124989026">${t.call}</a></div></header>
+  <section class="svc-sec"><h2>${t.includes}</h2><dl class="plain">${sv.includes.map(([a, b]) => `<div><dt>${esc(a)}</dt><dd>${esc(b)}</dd></div>`).join('')}</dl></section>
+  <section class="svc-sec"><h2>${t.needs}</h2><ul class="tick">${sv.needs.map(x => `<li>${esc(x)}</li>`).join('')}</ul><p class="small-note">${t.needsNote}</p></section>
+  ${sv.faq.length ? `<section class="svc-sec faq"><h2>${t.faq}</h2>${sv.faq.map(([q, a]) => `<details><summary>${esc(q)}</summary><p>${esc(a)}</p></details>`).join('')}</section>` : ''}
+  <section class="svc-end"><p>${t.ctaP}</p><div class="cta-row"><a class="btn" href="${WA}" target="_blank" rel="noopener">${t.free}</a><a class="btn out" href="tel:+13124989026">${t.call}</a></div></section>
 </div></main>`;
     writeFile(sbase(lang).slice(1) + sv.slug + '.html', layout({ lang, title: `${sv.title} | ISM Consulting Services`, desc: sv.desc, canonical: url, alt: altUrl, body, current: 'services',
       ld: [{ '@context': 'https://schema.org', '@type': 'Service', name: sv.schema, serviceType: sv.schema, description: sv.desc, url, areaServed: { '@type': 'Country', name: 'United States' },
           availableLanguage: ['Spanish', 'English'], provider: { '@type': 'AccountingService', name: 'ISM Consulting Services', url: SITE, telephone: '+1-312-498-9026', email: 'Info@ismconsultores.com', address: { '@type': 'PostalAddress', addressLocality: 'Chicago', addressRegion: 'IL', addressCountry: 'US' } } },
-        { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: sv.faq.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) },
+        ...(sv.faq.length ? [{ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: sv.faq.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) }] : []),
         { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
           { '@type': 'ListItem', position: 1, name: u.home, item: SITE + '/' }, { '@type': 'ListItem', position: 2, name: u.services, item: SITE + '/#servicios' }, { '@type': 'ListItem', position: 3, name: sv.name, item: url }] }] }));
     urls.push({ loc: url, alt: altUrl, lang, pri: '0.9', ts: '2026-11-23' });
