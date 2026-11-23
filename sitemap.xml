@@ -102,4 +102,167 @@
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
+
+  <!-- blog:start -->
+  <url>
+    <loc>https://ismconsultores.com/blog/</loc>
+    <lastmod>2026-11-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ismconsultores.com/blog/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ismconsultores.com/blog/en/"/>
+  </url>
+  <url>
+    <loc>https://ismconsultores.com/blog/calendario-fiscal-irs</loc>
+    <lastmod>2026-11-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ismconsultores.com/blog/calendario-fiscal-irs"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ismconsultores.com/blog/en/irs-tax-calendar"/>
+  </url>
+  <url>
+    <loc>https://ismconsultores.com/blog/impuestos-trabajador-independiente</loc>
+    <lastmod>2026-11-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ismconsultores.com/blog/impuestos-trabajador-independiente"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ismconsultores.com/blog/en/self-employed-taxes"/>
+  </url>
+  <url>
+    <loc>https://ismconsultores.com/blog/gastos-deducibles-pequeno-negocio</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ismconsultores.com/blog/gastos-deducibles-pequeno-negocio"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ismconsultores.com/blog/en/deductible-business-expenses"/>
+  </url>
+  <url>
+    <loc>https://ismconsultores.com/blog/carta-del-irs-que-hacer</loc>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ismconsultores.com/blog/carta-del-irs-que-hacer"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ismconsultores.com/blog/en/irs-letter-what-to-do"/>
+  </url>
+  <url>
+    <loc>https://ismconsultores.com/blog/llc-impuestos-s-corp</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ismconsultores.com/blog/llc-impuestos-s-corp"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ismconsultores.com/blog/en/llc-taxes-s-corp"/>
+  </url>
+  <url>
+    <loc>https://ismconsultores.com/blog/como-elegir-preparador-de-impuestos</loc>
+    <lastmod>2026-11-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ismconsultores.com/blog/como-elegir-preparador-de-impuestos"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ismconsultores.com/blog/en/choose-a-tax-preparer"/>
+  </url>
+  <url>
+    <loc>https://ismconsultores.com/blog/fincen-boi</loc>
+    <lastmod>2026-08-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ismconsultores.com/blog/fincen-boi"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ismconsultores.com/blog/en/fincen-boi"/>
+  </url>
+  <url>
+    <loc>https://ismconsultores.com/blog/formar-llc</loc>
+    <lastmod>2025-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ismconsultores.com/blog/formar-llc"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ismconsultores.com/blog/en/form-an-llc"/>
+  </url>
+  <url>
+    <loc>https://ismconsultores.com/blog/itin-obtener-renovar</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ismconsultores.com/blog/itin-obtener-renovar"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ismconsultores.com/blog/en/itin-get-or-renew"/>
+  </url>
+  <url>
+    <loc>https://ismconsultores.com/blog/en/</loc>
+    <lastmod>2026-11-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ismconsultores.com/blog/en/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ismconsultores.com/blog/"/>
+  </url>
+  <url>
+    <loc>https://ismconsultores.com/blog/en/irs-tax-calendar</loc>
+    <lastmod>2026-11-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ismconsultores.com/blog/en/irs-tax-calendar"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ismconsultores.com/blog/calendario-fiscal-irs"/>
+  </url>
+  <url>
+    <loc>https://ismconsultores.com/blog/en/self-employed-taxes</loc>
+    <lastmod>2026-11-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ismconsultores.com/blog/en/self-employed-taxes"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ismconsultores.com/blog/impuestos-trabajador-independiente"/>
+  </url>
+  <url>
+    <loc>https://ismconsultores.com/blog/en/deductible-business-expenses</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ismconsultores.com/blog/en/deductible-business-expenses"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ismconsultores.com/blog/gastos-deducibles-pequeno-negocio"/>
+  </url>
+  <url>
+    <loc>https://ismconsultores.com/blog/en/irs-letter-what-to-do</loc>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ismconsultores.com/blog/en/irs-letter-what-to-do"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ismconsultores.com/blog/carta-del-irs-que-hacer"/>
+  </url>
+  <url>
+    <loc>https://ismconsultores.com/blog/en/llc-taxes-s-corp</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ismconsultores.com/blog/en/llc-taxes-s-corp"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ismconsultores.com/blog/llc-impuestos-s-corp"/>
+  </url>
+  <url>
+    <loc>https://ismconsultores.com/blog/en/choose-a-tax-preparer</loc>
+    <lastmod>2026-11-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ismconsultores.com/blog/en/choose-a-tax-preparer"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ismconsultores.com/blog/como-elegir-preparador-de-impuestos"/>
+  </url>
+  <url>
+    <loc>https://ismconsultores.com/blog/en/fincen-boi</loc>
+    <lastmod>2026-08-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ismconsultores.com/blog/en/fincen-boi"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ismconsultores.com/blog/fincen-boi"/>
+  </url>
+  <url>
+    <loc>https://ismconsultores.com/blog/en/form-an-llc</loc>
+    <lastmod>2025-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ismconsultores.com/blog/en/form-an-llc"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ismconsultores.com/blog/formar-llc"/>
+  </url>
+  <url>
+    <loc>https://ismconsultores.com/blog/en/itin-get-or-renew</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ismconsultores.com/blog/en/itin-get-or-renew"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ismconsultores.com/blog/itin-obtener-renovar"/>
+  </url>
+  <!-- blog:end -->
 </urlset>

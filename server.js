@@ -54,7 +54,11 @@ function contact(req, res) {
 http.createServer((req, res) => {
   if (req.method === 'POST' && req.url === '/api/contact') return contact(req, res);
   let rel = decodeURIComponent(req.url.split('?')[0]).replace(/^\/+/, '') || 'index.html';
-  if (!(PUBLIC.has(rel) || /^img\/[\w.-]+\.webp$/.test(rel))) rel = 'index.html';
+  const clean = rel.replace(/\/$/, '');
+  if (/^blog(\/en)?$/.test(clean)) rel = clean + '/index.html';                 // /blog/ y /blog/en/
+  else if (/^blog\/(en\/)?[\w-]+$/.test(clean)) rel = clean + '.html';          // /blog/slug
+  else if (rel === 'blog/blog.css') { /* estilos del blog */ }
+  else if (!(PUBLIC.has(rel) || /^img\/[\w.-]+\.webp$/.test(rel))) rel = 'index.html';
   const f = load(rel);
   if (!f) { res.writeHead(404); return res.end('Not found'); }
   const h = { 'Content-Type': f.type, 'Cache-Control': f.cc, ETag: f.etag, Vary: 'Accept-Encoding', 'X-Content-Type-Options': 'nosniff' };

@@ -1,15 +1,18 @@
 # ISM Consulting Services – sitio web
 
-Mismo diseño que ismconsultores.com, optimizado y desplegado en Railway.
-- HTML pre-renderizado + `app.js` precompilado, fotos WebP locales (`img/`), carga diferida
-- `server.js`: servidor sin dependencias con compresión brotli/gzip, caché y `POST /api/contact`
-- Accesibilidad (etiquetas, `<main>`, contraste, nombres de enlaces), `?lang=en` abre el sitio en inglés
-- `og-image.jpg` para compartir en WhatsApp/Facebook
+Mismo diseño que ismconsultores.com, optimizado y desplegado en Railway (`npm start` → `server.js`).
+
+## Estructura
+- `src/` código fuente: `app.jsx` (página principal), `template.html`, `articles.mjs` + `articles.new.mjs` (artículos del blog, ES/EN)
+- `scripts/build.mjs` genera `app.js`, `index.html` (pre-renderizado), `blog/*.html` y `sitemap.xml`
+- `blog/` artículos y índice (`/blog/` en español, `/blog/en/` en inglés), generados
+- `server.js` servidor sin dependencias: compresión, caché, `POST /api/contact`
+
+## Cambiar o agregar artículos
+1. Edite `src/articles.new.mjs` (copie un artículo existente: slug, título, resumen, puntos clave y contenido, en `es` y en `en`).
+2. `npm install` (una vez) y `npm run build:site`.
+3. Suba los cambios: Railway redespliega solo.
 
 ## Recibir las solicitudes por correo (Resend)
-En Railway → Variables del servicio:
-- `RESEND_API_KEY` (cuenta gratis en resend.com)
-- `CONTACT_TO` (opcional, por defecto Info@ismconsultores.com)
-- `CONTACT_FROM` (opcional; con dominio verificado, ej. `ISM Web <web@ismconsultores.com>`)
-
+Variables en Railway: `RESEND_API_KEY`, y opcionalmente `CONTACT_TO` y `CONTACT_FROM`.
 Sin `RESEND_API_KEY` el formulario abre WhatsApp con el mensaje listo.
