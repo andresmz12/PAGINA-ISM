@@ -845,7 +845,6 @@ function Footer({ c }) {
         <div className="footer-brand">
           <img loading="lazy" decoding="async" src={window.__resources && window.__resources.logo || "logo.jpeg"} alt="ISM Consulting Services" className="footer-logo-img" width="52" height="52" />
           <p>{c.desc}</p>
-          <a href="https://wa.me/13124989026" target="_blank" rel="noopener" className="btn-primary" style={{fontSize:'13px',padding:'10px 20px',background:'var(--blue-mid)'}}>WhatsApp</a>
         </div>
         <div className="footer-col">
           <h3>{c.nav}</h3>
